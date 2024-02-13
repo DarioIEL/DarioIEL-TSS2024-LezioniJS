@@ -80,20 +80,47 @@ function vaiIndietro(){
 
 btnIndietro.onclick = vaiIndietro;
 
+/////////////////////////////////////////////////costruzione Anteprima
 
-// let mioArr = ["a", "b", "c", "d", "e", "f"];
-// //[a,f,b,e,c,d]
-// let newArr = [];
-// let i = 0;
 
-// while (newArr.length < mioArr.length) {
+let titoloInp = document.querySelector("#titoloInp");
+let titoloAnte = document.querySelector("#titoloAnte");
 
-//     if(i%2 == 0){
-        
-//     }
-//     newArr[i] = mioArr[i];
+titoloInp.addEventListener("blur", function(){
+    titoloAnte.innerHTML = titoloInp.value;
+});
 
-//     i++
-// }
 
-// console.log(newArr);
+let imgInp = document.querySelector("#imgInp");
+let imgAnte = document.querySelector("#imgAnte");
+imgInp.addEventListener("blur", function(){
+    imgAnte.setAttribute("src", imgInp.value);
+});
+
+let autoreInp = document.querySelector("#autoreInp");
+let autoreAnte = document.querySelector("#autoreAnte");
+
+autoreInp.addEventListener("blur", function(){
+    autoreAnte.innerHTML = autoreInp.value;
+})
+
+let tramaInp = document.querySelector("#tramaInp");
+let tramaAnte = document.querySelector("#tramaAnte");
+
+tramaInp.addEventListener("blur", function(){
+    tramaAnte.innerHTML = tramaInp.value;
+})
+
+let personaggiInp = document.querySelector("#personaggiInp");
+let personaggiAnte = document.querySelector("#personaggiAnte");
+let listaPersonaggi = [];
+
+personaggiInp.addEventListener("blur", function(){
+
+    listaPersonaggi.push(personaggiInp.value);
+
+    personaggiAnte.innerHTML = "";
+    listaPersonaggi.forEach(personaggio =>{
+        personaggiAnte.innerHTML += "<li>" + personaggio + "</li>";
+    })
+})
