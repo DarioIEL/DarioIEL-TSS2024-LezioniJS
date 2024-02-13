@@ -1,0 +1,8 @@
+.dimCopertina{
+    width: 300px;
+    height: auto;
+}
+
+.bgFaded{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(93, 0, 200));
+}
