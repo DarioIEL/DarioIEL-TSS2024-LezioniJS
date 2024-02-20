@@ -19,3 +19,11 @@
 .borderRed{
     border: 2px solid red;
 }
+
+.boxMsg{
+    width: 200px;
+    height: auto;
+    border: 2px solid red;
+    float: left;
+    margin: 20px;
+}

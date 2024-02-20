@@ -5,18 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <h1>Scrivi Messaggio</h1>
-
-    <p>Crea un form (get) dal quale acquisisci username (min 5 caratteri) e messaggio (textArea max 100 caratteri).
+    <!-- <p>Crea un form (get) dal quale acquisisci username (min 5 caratteri) e messaggio (textArea max 100 caratteri).
         Sotto la textarea deve esserci un contatore che scala ogni singolo carattere. Arrivato a 0 impedisco all'utente
         di scrivere ulteriormente. Gestisci tutto con Eventi keyboard.
         Quando è tutto completo clicca su Invia e stampa sotto il form lo username e il messaggio.
         ATT: username e messaggio devono essere salvati in un oggetto. Valuta la possibilità di avere più messaggi per
-        lo stesso utente. </p>
+        lo stesso utente. </p> -->
+
+    <h1>Scrivi un messaggio</h1>
+    <input type="text" id="username" style="margin-bottom: 20px;" placeholder="username"><br>
+    <textarea name="" id="messaggio" cols="30" rows="10" maxlength="100" minlength="5"></textarea>
+    <br>
+    <span id="caratteriRestanti">100</span>
+    <br>
+    <button id="btnInvia">Invia</button>
+
+    <div id="feed"></div>
+    <hr>
+
+    <div id="demo"></div>
+
+
+    <script src="./js/script.js"></script>
 
 
 </body>
