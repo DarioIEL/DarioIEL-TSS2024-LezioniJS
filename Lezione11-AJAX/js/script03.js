@@ -24,6 +24,12 @@ function creaItem(prodotto){
     li.setAttribute("class", "list-group-item");
     li.textContent = prodotto.brand + " " + prodotto.title + " - € " + prodotto.price;
 
+    let img = document.createElement("img");
+    img.setAttribute("src", prodotto.thumbnail);
+    img.setAttribute("class", "img-responsive dimImg");
+
+    li.appendChild(img)
+
     let btnAddCarrello = document.createElement("button");
     btnAddCarrello.setAttribute("class", "btn btn-primary");
     btnAddCarrello.innerHTML = "<i class='bi bi-cart'></i>";
