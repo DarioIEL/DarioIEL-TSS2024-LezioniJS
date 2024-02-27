@@ -1,0 +1,7 @@
+.cardPost{
+    width: 20%;
+    height: auto;
+    margin: 20px 5%;
+    border: 1px solid black;
+    float: left;
+}
