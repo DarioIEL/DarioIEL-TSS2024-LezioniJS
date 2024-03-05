@@ -1,0 +1,34 @@
+{
+ 
+  "studenti": [
+    {
+      "id": "1",
+      "nome": "Paola",
+      "cognome": "Rossi"
+    },
+    {
+      "id": "2",
+      "nome": "Mario",
+      "cognome": "Verdi"
+    },
+    {
+      "id": "3",
+      "nome": "Anna",
+      "cognome": "Bianchi"
+    },
+    {
+      "id": "be5b",
+      "nome": "Gennarino",
+      "cognome": "Verdi"
+    }
+  ],
+
+  "rubrica": [
+    {
+        "id":"1",
+        "nome": "Dario Mennillo",
+        "email": "dario.mennillo@immaginazioneelavoro.it",
+        "tel": "968743210"
+    }
+  ]
+}
