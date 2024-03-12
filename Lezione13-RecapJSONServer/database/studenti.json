@@ -1,0 +1,22 @@
+{
+  "studenti": [
+    {
+      "id": 1,
+      "nome": "Pippo",
+      "cognome": "Rossi",
+      "corso": "TSS"
+    },
+    {
+      "id": 2,
+      "nome": "Laura",
+      "cognome": "Verdi",
+      "corso": "TSS"
+    },
+    {
+      "id": "4",
+      "nome": "Maria",
+      "cognome": "Gestione",
+      "corso": "TSS"
+    }
+  ]
+}
