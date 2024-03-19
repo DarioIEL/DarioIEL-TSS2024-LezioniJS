@@ -1,3 +1,6 @@
+//Creare delle card per ogni singolo viaggio. La card avrà un pulsante che salva in Local Storage parte del viaggio (tratta, costo, tipologia). Quando entri nella pagina carrello questa legge la LS e recupera quello salvato.
+
+
 function scaricaViaggi() {
     const ENDPOINTviaggi = "http://localhost:3000/viaggi";
 
@@ -35,8 +38,9 @@ function creaCardViaggio(viaggio) {
 
     let cardBody = document.createElement("div");
     cardBody.setAttribute("class", "card-body");
-    cardBody.innerHTML = `<h4 class="card-title">${viaggio.tratta}</h4>
-                      <p class="card-text">Costo: ${viaggio.costo}</p>`;
+    cardBody.innerHTML =
+        `<h4 class="card-title">${viaggio.tratta}</h4>
+    <p class="card-text">Costo: ${viaggio.costo}</p>`;
 
 
     card.appendChild(img);
