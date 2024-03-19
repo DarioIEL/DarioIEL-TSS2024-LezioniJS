@@ -1,0 +1,65 @@
+{
+    "viaggi": [
+        {
+            "id": "1",
+            "tratta": "Torino - Napoli",
+            "costo": 100,
+            "mezzo": "Treno",
+            "durata": "6h",
+            "data": "20/03/2024",
+            "postiDisponibili": 30,
+            "tipologia": [
+                {
+                    "nome": "Bussiness",
+                    "costo": 50
+                },
+                {
+                    "nome": "Premium",
+                    "costo": 20
+                },
+                {
+                    "nome": "Base",
+                    "costo": 0
+                }
+            ],
+            "locandina": "https://hips.hearstapps.com/hmg-prod/images/napoli-1653914862.png",
+            "disponibilita": true
+        },
+        {
+            "id": "2",
+            "tratta": "Roma - Barcellona",
+            "costo": 150,
+            "mezzo": "Aereo",
+            "durata": "2h",
+            "data": "20/03/2024",
+            "postiDisponibili": 10,
+            "tipologia": [
+                {
+                    "nome": "Bussiness",
+                    "costo": 50
+                },
+                {
+                    "nome": "Premium",
+                    "costo": 20
+                },
+                {
+                    "nome": "Base",
+                    "costo": 0
+                }
+            ],
+            "locandina": "https://www.costacrociere.it/content/dam/costa/costa-magazine/article-images/what-to-see-barcelona/barcellona-parc-guell_1.jpg.image.1296.974.high.jpg",
+            "disponibilita": true
+        }
+    ],
+
+
+    "bigliettiAcquistati": [
+        {
+            "id": "abs23",
+            "nome": "Dario Mennillo",
+            "tratte": ["2", "1"],
+            "email": "dario.mennillo@mail.com",
+            "metodoPagamento": "carta di credito"
+        }
+    ]
+}
