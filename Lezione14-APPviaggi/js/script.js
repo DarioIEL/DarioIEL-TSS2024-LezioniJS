@@ -30,7 +30,7 @@ function creaCardViaggio(viaggio) {
     // </div>`;
 
     let card = document.createElement("div");
-    card.setAttribute("class", "card");
+    card.setAttribute("class", "card col-4 m-2 p-2");
 
     let img = document.createElement("img");
     img.setAttribute("class", "card-img-top");
@@ -40,11 +40,20 @@ function creaCardViaggio(viaggio) {
     cardBody.setAttribute("class", "card-body");
     cardBody.innerHTML =
         `<h4 class="card-title">${viaggio.tratta}</h4>
-    <p class="card-text">Costo: ${viaggio.costo}</p>`;
+        <p class="card-text">Costo: ${viaggio.costo}</p>`;
+
+    let btnAcquista = document.createElement("button");
+    btnAcquista.setAttribute("class", "btn btn-primary col-3")
+    btnAcquista.innerHTML = "Acquista";
+
+    btnAcquista.addEventListener("click", function () {
+        console.log(viaggio);
+    });
 
 
     card.appendChild(img);
     card.appendChild(cardBody)
+    card.appendChild(btnAcquista);
 
     return card;
 }
