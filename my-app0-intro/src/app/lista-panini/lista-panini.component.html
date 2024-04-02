@@ -1,0 +1,13 @@
+<!-- Direttiva ngFor, * vuol dire che è una direttiva di renderizzazione. Fratello del forOf -->
+<ul *ngFor="let panino of listaPanini">
+    <li>
+        {{panino.nome | uppercase}}. Ingredienti:
+        <ul *ngFor="let ingrediente of panino.ingredienti">
+            <li>
+                {{ingrediente}}
+            </li>
+        </ul>
+
+        <strong>{{panino.prezzo | currency: "EUR"}}</strong>
+    </li>
+</ul>
