@@ -10,11 +10,6 @@ export class ListaPaniniComponent {
 
   listaPanini: Panino[] = [
     {
-      nome: "Poldo",
-      ingredienti: ["Hamburger", "Pomodoro", "Insalata"],
-      prezzo: 6.50
-    },
-    {
       nome: "Bruto",
       ingredienti: ["Hamburger", "Bacon", "Uovo", "Carciofi", "Ceddar"],
       prezzo: 9.20
@@ -30,5 +25,12 @@ export class ListaPaniniComponent {
       prezzo: 14.50
     }
   ]
+
+    
+  onAggiungiPanino(): void{
+    let nuovoPanino = new Panino("Vegano", ["Zucchine", "Funghi", "Seitan"], 5.50);
+    console.log("Stai aggiungendo un nuovo panino");
+    this.listaPanini.push(nuovoPanino);
+  }
 
 }
