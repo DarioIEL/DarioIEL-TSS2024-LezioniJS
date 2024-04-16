@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/">TSS</a>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <!-- Per collegare il component da renderizzare si utilizza l'attributo [router-link]="['path del component']" -->
+                    <a class="nav-link" [routerLink]="['/']" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/chi-siamo']">Chi Siamo</a>
+                </li>
+                <li>
+                    <a class="nav-link" [routerLink]="['/contatti']">Contatti</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

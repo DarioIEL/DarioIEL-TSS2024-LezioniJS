@@ -1,0 +1,8 @@
+<div class="card col" [ngClass]="assegnaColore(giocoSingolo)">
+    <img class="card-img-top" src="{{giocoSingolo.locandina}}" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">{{giocoSingolo.nome}}</h4>
+        <p class="card-text">Anno Uscita: {{giocoSingolo.annoUscita}}</p>
+        <p class="card-text">Partecipanti: {{giocoSingolo.numGiocatori}}</p>
+    </div>
+</div>

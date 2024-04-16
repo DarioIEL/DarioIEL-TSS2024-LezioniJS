@@ -1,0 +1,12 @@
+<h1>Lista Giochi</h1>
+
+<div class="row row-cols-6">
+    <!-- Faccio un ngFor sulla listaGiochi -->
+    <!-- Attribute binding tra parentesi [] -->
+    <app-gioco *ngFor="let gioco of listaGiochi" [giocoSingolo]="gioco"></app-gioco>
+</div>
+
+<div class="row">
+    <!-- Event Binding tra parentesi () -->
+    <app-edit-gioco (onGioco)="onAggiungiGioco($event)"></app-edit-gioco>
+</div>

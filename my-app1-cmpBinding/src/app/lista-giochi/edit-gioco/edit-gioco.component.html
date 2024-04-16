@@ -1,0 +1,36 @@
+<p>Qui creo il mio nuovo Gioco con un form e lo emetto al parent</p>
+
+<div class="col-6">
+
+    <div class="mb-3">
+        <label for="" class="form-label">Nome Gioco</label>
+        <!-- TWO WAY DATABINDING: Ovvero associo un campo input con una prop di classe. Per poter utilizzare la direttiva ngModel devo importare i FormsModule nell'app.module.ts -->
+        <input type="text" class="form-control" [(ngModel)]="nomeGioco" />
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Genere</label>
+        <select class="form-select form-select-lg" [(ngModel)]="genereGioco">
+            <option selected>Select one</option>
+            <option value="gioco da tavolo">Gioco da tavolo</option>
+            <option value="videogame">Videogame</option>
+            <option value="carte">Carte</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Anno Uscita</label>
+        <input type="number" class="form-control" [(ngModel)]="annoUscitaGioco" />
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Locandina</label>
+        <input type="text" class="form-control" [(ngModel)]="locandinaGioco" />
+    </div>
+
+
+    {{nomeGioco}} - {{genereGioco}}
+</div>
+
+
+<!-- Il metodo onCreaGioco si occuperà di emettere il nuovo gioco sfruttando l'event emitter -->
+<button class="btn btn-primary " (click)="onCreaGioco()">Crea Gioco</button>
