@@ -1,0 +1,34 @@
+{
+  "cars": [
+    {
+      "id": "0",
+      "marca": "Peugeot",
+      "modello": "2008"
+    },
+    {
+      "id": "1",
+      "marca": "Fiat",
+      "modello": "500"
+    },
+    {
+      "id": "2",
+      "marca": "Volskwagen",
+      "modello": "T-Rok"
+    },
+    {
+      "id": "3",
+      "marca": "Ford",
+      "modello": "Puma"
+    },
+    {
+      "id": "3",
+      "marca": "Ford",
+      "modello": "Puma"
+    },
+    {
+      "id": 3,
+      "marca": "Ford",
+      "modello": "Puma"
+    }
+  ]
+}
