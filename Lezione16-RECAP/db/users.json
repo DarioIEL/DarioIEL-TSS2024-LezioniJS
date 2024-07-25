@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id":1,
+            "nome": "Dario",
+            "email": "dario@mail.com",
+            "password": "DarioDario",
+            "role": "admin"
+        },
+        {
+            "id":2,
+            "nome": "Pippo",
+            "email": "pippo@mail.com"
+,           "password": "rossirossi",
+            "role": "base"
+        }
+    ]
+}
